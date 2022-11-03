@@ -28,7 +28,7 @@ fetch('http://localhost:5678/api/works').then(dataarticle => dataarticle.json())
     for (let jsonArticle of jsonListArticle) {
         let article = new Article(jsonArticle);
 
-        document.querySelector(".gallery").innerHTML += `<figure class="category${article.category.id} article" id="article${article.id}">
+        document.querySelector(".gallery").innerHTML += `<figure class="category${article.category.id} show article" id="article${article.id}">
 					<!--<img src="${article.imageUrl}" alt="${article.title}">-->
 					
 					<figcaption>${article.title}</figcaption>
