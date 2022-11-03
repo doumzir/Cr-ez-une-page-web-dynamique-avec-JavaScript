@@ -124,6 +124,8 @@ ul {
 	justify-content: space-between;
 }
 
+
+
 .filterLi {
 	border: 2px solid #1D6154;
 	-webkit-border-radius: 60px;
@@ -133,6 +135,7 @@ ul {
 	text-align: center;
 	color: #1D6154;
 	font-weight: 700;
+
 }
 
 .filterLi:hover {
@@ -198,6 +201,19 @@ h2 {
 	font-size: 30px;
 	color: #1D6154
 }
+
+.article {
+	display: none;
+}
+
+.active {
+	color: red;
+}
+
+.show {
+	display: block;
+}
+
 
 nav ul {
 	display: flex;
