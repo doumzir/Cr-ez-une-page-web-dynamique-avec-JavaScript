@@ -92,6 +92,8 @@ video {
 	vertical-align: baseline;
 }
 
+
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -141,6 +143,11 @@ ul {
 .filterLi:hover {
 	background-color: #1d61545e;
 	color: white;
+}
+
+.filterLi.active {
+	color: white;
+	background-color: #1D6154;
 }
 
 blockquote,
@@ -204,9 +211,7 @@ h2 {
 
 
 
-.active {
-	color: red;
-}
+
 
 
 
@@ -224,7 +229,15 @@ nav li {
 	font-size: 1.2em;
 }
 
-li:hover {
+a,
+a:active {
+	color: black;
+	font-style: none;
+	text-decoration: none;
+}
+
+li:hover,
+a:hover {
 	color: #B1663C;
 	cursor: pointer;
 }
