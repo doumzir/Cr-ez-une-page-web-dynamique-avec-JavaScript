@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
+#modal * {
+    box-sizing: border-box;
+}
+
+/*
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-wrapper {
+
+    overflow: auto;
+    background-color: white;
+    width: 600px;
+    max-width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px);
+    padding: 20px;
+}*/
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#modalBox{
+    position: relative;
+    top: 10vh;
+    border-radius: 10px;
+    margin: auto;
+    background-color: white;
+    max-width: 630px;
+    width: 630px;
+
+}
+
+#modal .modalBox {
+
+    border-radius: 10px;
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 104.5px;
+    background-color: white;
+    max-width: 630px;
+    width: 630px;
+
+    /*background-color: white;*/
+}
+#modal .modalBox::-webkit-scrollbar {
+    width: 0 !important
+}
+#modal h2 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 36px;
+}
+#modal .galleryEdit {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 9px;
+    grid-row-gap: 12px;
+    padding: 10px 0 47px 0;
+    max-height: 365px;
+    overflow: auto;
+}
+#modal .galleryEdit::-webkit-scrollbar {
+    width: 0 !important
+}
+#modal .galleryEdit figure {
+    position: relative;
+}
+
+#modal .galleryEdit img {
+    width: 100%;
+    height: 105px;
+    object-fit: cover;
+
+}
+#modal hr {
+    width: 80%;
+    margin: 0px auto;
+}
+#modal #works hr {
+    margin: 26px auto 30px auto;
+}
+#modal #works {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 420px;
+}
+
+.hidden p, .hidden i {display:none}
+
+#inputImgstyle{
+    background-color: #E8F1F7;
+    height: 169px;
+    display: flex;
+    padding: 28px 0  20px 0;
+    flex-direction: column;
+    width: 420px;
+    align-items: center;
+margin-bottom: 30px;
+}
+#inputImgstyle img {
+    width: 129px;
+    height: 100%;
+    object-fit: cover;
+}
+#inputImgstyle:hover{
+    cursor: pointer;
+}
+.fa-image{
+    font-size: 53px;
+    line-height: 46px!important;
+    color:#B9C5CC;
+    margin-bottom:21px;
+}
+#image{
+    display: none;
+}
+#srcImage{
+    display: none;
+}
+.buttonLike{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #306685;
+    background: #CBD6DC;
+    border-radius: 50px;
+    width: 173px;
+    height: 36px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom:7px ;
+}
+#modal #works input, #modal #categorylist {
+    width: 100%;
+    height: 51px;
+}
+#modal #works #Editgall{
+    width: 237px;
+    height: 36px;
+    margin-bottom: 55px;
+}
+#modal #addEdit {
+    display: none;
+    /*flex-direction: column;
+    padding: 0 104.5px;
+    align-items: center;*/
+}
+#modal #addEdit input, #modal #addEdit select{
+    width: 420px;
+    margin: 10px auto 21px auto;
+}
+#modal .addEdit button {
+    margin-bottom: 23px;
+    /*padding: 10px 50px;*/
+    border-radius: 60px;
+    border: 0;
+    background-color: #1D6154;
+    color: white;
+    font-weight: 600;
+}
+#close-modal {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 24px;
+    font-size: 24px;
+}
+#return-modal{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 24px;
+    font-size: 24px;
+}
+.trash {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background-color: black;
+    max-width: 17px;
+    max-height: 17px;
+    padding: 4px;
+}
+#BtnAddImg {
+    width: 237px;
+    height: 36px;
+    padding: 10px 49px;
+    border: 0;
+    margin: 38px auto 23px auto;
+}
+#supprAll {
+    color: red;
+    margin-bottom: 48px;
+}

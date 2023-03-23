@@ -150,6 +150,47 @@ ul {
 	background-color: #1D6154;
 }
 
+.projectEdit {
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+
+
+}
+
+#buttonEdit {
+	display: none !important;
+
+}
+
+#Edit {
+	padding: 0;
+	grid-column: 4;
+
+	grid-row: 1;
+	background-color: white;
+	border: 0px;
+	display: flex;
+
+	margin-bottom: 30px;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Work Sans';
+
+}
+
+#Edit img {
+	width: 18px;
+	margin-right: 8px;
+}
+
+.buttonEdit {
+	display: none !important;
+
+}
+
 blockquote,
 q {
 	quotes: none;
@@ -232,7 +273,7 @@ nav li {
 a,
 a:active {
 	color: black;
-	font-style: none;
+	font-style: normal;
 	text-decoration: none;
 }
 
@@ -271,9 +312,10 @@ a:hover {
 
 #portfolio h2 {
 	text-align: center;
+	grid-row: 1;
 	margin-bottom: 1em;
+	grid-column: 3;
 }
-
 
 .gallery {
 	width: 100%;
@@ -285,6 +327,9 @@ a:hover {
 
 .gallery img {
 	width: 100%;
+
+	height: 407px;
+	object-fit: cover;
 
 }
 

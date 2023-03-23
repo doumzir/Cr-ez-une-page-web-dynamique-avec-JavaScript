@@ -11,7 +11,7 @@
         rel="stylesheet">
     <meta name="description" content="">
     <link rel="stylesheet" href="../assets/style.css">
-
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
@@ -23,12 +23,37 @@
                 <li><a>projets</a></li>
                 <li><a>contact</a></li>
                 <li><a>login</a></li>
-                <li><a><img src="../assets/icons/instagram.png" alt="Instagram"></a></li>
+
+                <li><a><img src=" ../assets/icons/instagram.png" alt="Instagram"></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <article>
+        <section id="loginPage">
+
             <h2>Log In</h2>
-        </article>
+            <form action="#" method="post" id="login">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="password">Mot de Passe</label>
+                <input type="password" id="password" name="password" id="password">
+                <p id="errorMail">E-mail ou mot de passe non valide</p>
+
+                <input type="submit" id="connectionBtn" value="se connecter">
+
+                <a href="#">Mot de passe oublié</a>
+            </form>
+        </section>
+
     </main>
+    <footer>
+        <nav>
+            <ul>
+                <li>Mentions Légales</li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

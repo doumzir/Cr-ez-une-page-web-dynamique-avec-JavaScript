@@ -39,5 +39,4 @@ function filterSelection(c) {
     }
 
 }
-filterSelection("category1");
-console.log()
+
