@@ -8,7 +8,7 @@ let form = {
     submit: document.querySelector("#connectionBtn"),
 
 };
-let button = form.submit.addEventListener("click", (e) => {
+form.submit.addEventListener("click", (e) => {
     e.preventDefault();
     const login = "http://localhost:5678/api/users/login";
 
@@ -30,9 +30,6 @@ let button = form.submit.addEventListener("click", (e) => {
             // code here //
             if (data.message == "user not found" || data.error) {
                 errorMail.style.display = "block";
-
-                console.log(data);
-
             } else {
                 speautorized = data.token
                 errorMail.style.display = "none";
@@ -40,17 +37,11 @@ let button = form.submit.addEventListener("click", (e) => {
                 sessionStorage.setItem('showEdit', 1)
                 window.open(
                     "../index.html",
-
                 );
 
-
-
-                console.log(data);
-                /*opens the target page while Id & password matches*/
-
-            };
+            }
         })
         .catch((err) => {
-            console.log(err);
+            alert(`une erreur est survenu veuillez réessayer plus tard ${err}`);
         });
 });

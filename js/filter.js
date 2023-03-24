@@ -8,6 +8,7 @@ function AddClass(element, name) {
         }
     }
 }
+
 function DeletClass(element, name) {
     let i, arr1, arr2;
     arr1 = element.className.split(" ");
