@@ -1,5 +1,5 @@
 const openModalLink = document.getElementById("Edit");
-const closeModalLink = document.getElementById("close-modal");
+const closeModalLink = document.getElementById("close-modal");c
 let displayModal = null;
 let dynamicIdDelet;
 let obj;
